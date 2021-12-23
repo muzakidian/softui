@@ -14,11 +14,9 @@ jobs:
             -   name: Setup Enviroment
                 uses: shivammathur/setup-php@v2
                 with:
-                    php-version: '7.4'
+                    php-version: '8.0.10'
             -   name: Install Packages
-                run: composer install 
-            -   name: Update Packages
-                run: composer update 
+                run: composer install --no-dev
             -   name: Deploy to Server
                 uses: ngocquyhoang/deploy@laravel
                 with:
