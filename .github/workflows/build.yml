@@ -4,11 +4,6 @@ on:
     branches:
       - master
 
-variables:
-  MYSQL_DATABASE: softui
-  DB_HOST: mysql
-  DB_USERNAME: root
-
 jobs:
   build:
     name: Build and Deploy
