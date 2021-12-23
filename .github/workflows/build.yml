@@ -29,7 +29,6 @@ jobs:
         run: php artisan db:seed
       - name: Run tests
         run: vendor/bin/phpunit
-      - name: Deploy
       - uses: actions/checkout@v2
       - name: Download build assets
         uses: actions/download-artifact@v1
