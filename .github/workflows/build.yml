@@ -16,7 +16,7 @@ jobs:
                 with:
                     php-version: '7.4'
             -   name: Install Packages
-                run: composer install --no-dev
+                run: composer install --ignore-platform-reqs
             -   name: Deploy to Server
                 uses: ngocquyhoang/deploy@laravel
                 with:
