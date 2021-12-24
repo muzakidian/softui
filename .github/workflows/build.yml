@@ -54,8 +54,8 @@ jobs:
 
       - name: 'Build and push'
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/tugas-cicd .
-          docker push ${{ secrets.DOCKERHUB_USERNAME}}/tugas-cicd
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/softui .
+          docker push ${{ secrets.DOCKERHUB_USERNAME}}/softui
         working-directory: ./php
 
       - name: 'Write config'
